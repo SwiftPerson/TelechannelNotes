@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeleChannel Version 2 Server Release Notes</title>
+    <style>
+      /* Global styles */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #212e23;
+        color: #a2cdb0;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px;
+        animation: fade-in 1s ease;
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #456951;
+        text-align: center;
+      }
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #f50057;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      ul {
+        margin-bottom: 15px;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+      .footer {
+        margin-top: 40px;
+        font-size: 14px;
+        text-align: center;
+      }
+      .footer p {
+        margin: 5px;
+      }
+
+      /* Dark Mode */
+      .dark-mode {
+        background-color: #85a389;
+        color: #fff;
+      }
+      .dark-mode h1,
+      .dark-mode h2 {
+        color: #a2cdb0;
+      }
+      .dark-mode .footer span {
+        color: #a2cdb0;
+      }
+      /* Light Mode */
+      .light-mode {
+        background-color: #f1c27b;
+        color: #212121;
+      }
+      .light-mode h1,
+      .light-mode h2 {
+        color: #ffebcc;
+      }
+      .light-mode .footer span {
+        color: #ffebcc;
+      }
+      /* Toggle button */
+      .toggle-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      .toggle-button:focus {
+        outline: none;
+      }
+      .toggle-button .icon {
+        font-size: 24px;
+        color: #fff;
+      }
+      .toggle-button.dark-mode .icon {
+        color: #f9a825;
+      }
+    </style>
+    <script>
+      function toggleMode() {
+        document.body.classList.toggle("dark-mode");
+        document.body.classList.toggle("light-mode");
+        const icon = document.querySelector(".toggle-button .icon");
+        icon.classList.toggle("fa-moon");
+        icon.classList.toggle("fa-sun");
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/3525a62f1a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>TeleChannel Version 2 Server Release Notes</h1>
+      <h2>Version 2.0.0</h2>
+      <ul>
+        <li>New feature: Enhanced security measures</li>
+        <li>New feature: WhatsApp automated complaint message</li>
+        <li>Improved performance and stability</li>
+      </ul>
+      <h2>Version 1.2.0</h2>
+      <ul>
+        <li>Minor bug fixes and improvements</li>
+        <li>Enhanced database connectivity</li>
+      </ul>
+      <h2>Version 1.1.0</h2>
+      <ul>
+        <li>Minor bug fixes and performance optimizations</li>
+      </ul>
+      <h2>Version 1.0.0</h2>
+      <ul>
+        <li>Initial release</li>
+      </ul>
+      <div class="footer">
+        <p>Made by <span style="color: #ffffff">Looprix</span></p>
+        <p>Contact: <span style="color: #ffffff">+92 319 9203337</span></p>
+      </div>
+    </div>
+
+    <button class="toggle-button" onclick="toggleMode()">
+      <i class="icon fas fa-moon"></i>
+    </button>
+  </body>
+</html>
